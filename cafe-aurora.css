@@ -1,0 +1,78 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: RGB(255, 250, 246);
+    justify-content: center;
+    margin: 0;
+}
+
+
+
+.top-bar{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    border-bottom: 5px solid #ccc;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;               
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo-cafe {
+    width: 10%;
+    height: auto;
+}
+
+.menu-toggle {
+    width: 15%; 
+    height: auto;
+}
+
+.intro{
+    color:white;
+}
+
+.main-image {
+    position: relative; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-image-cafe {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.intro {
+    position: absolute;   
+    top: 50%;             
+    left: 50%;            
+    transform: translate(-90%, -20%); 
+    color: white;        
+    padding: 0 20px; 
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); 
+}
+
+.intro p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+h2 {
+    font-size: 2 rem;
+    padding: 3%;
+}
