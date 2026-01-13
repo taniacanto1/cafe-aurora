@@ -88,6 +88,22 @@ h2 {
     opacity: 1;
 }
 
+/* ARREGLO INMA */
+
+.categories{
+    padding-top: 12px;
+    padding-bottom: 5px;
+}
+
+.categories-div{
+    display: flex;
+    align-items: center;
+}
+
+.categories-title{
+    padding-right: 5px;
+}
+
 /* Botones */
 
 .category-btns {
