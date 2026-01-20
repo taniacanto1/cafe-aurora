@@ -16,7 +16,9 @@ body {
     border-bottom: 5px solid #ccc;
     align-items: center;
     padding: 0 20px;
-    height: 60px;               
+    height: 60px;  
+    position: relative;      
+    z-index: 1000; /* Asegura que la barra en sí esté por encima de todo */       
 }
 
 img {
@@ -104,11 +106,64 @@ h2 {
     padding-right: 5px;
 }
 
-/* Botones */
+/* MENÚ HAMBURGUESA */
+
+#menu-check {
+    display: none;
+}
+
+.menu-toggle {
+    width: 40px; /* Ajusta el tamaño de tu icono */
+    cursor: pointer; 
+}
+
+.menu-items {
+    position: absolute; /* Lo saca del flujo normal para que flote */
+    top: 100%; /* Lo coloca justo debajo de la .top-bar */
+    right: 0; /* para anclar a la derecha */
+    width: 50%; /* para que el desplegable esté por la mitad */
+    z-index: 999; /* El número que asegura que esté encima de la imagen principal */
+    background-color: #ffffff;
+    box-shadow: -5px 5px 15px rgba(0,0,0,0.2);/* Sombra para dar sensación de altura (UX) */
+    display: none;
+    padding: 0;
+}
+
+.menu-items a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Cuando #menu-check esté marcado (:checked), busca a su hermano .menu-items 
+   y cámbiale el display a block */
+#menu-check:checked ~ .menu-items {
+    display: block;
+}
+
+/* Lista de elementos */
+.menu-items li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Quitar el borde del último elemento para que no quede raro abajo */
+.menu-items li:last-child {
+    border-bottom: none;
+}
+
+.menu-items ul {
+    list-style: none; /* Quita los puntitos de la lista */
+    margin: 0;     
+    padding: 0;   
+}
+
+/* BOTONES */
 
 .category-btns {
-    padding-left: 10px; /* PREGUNTA: CÓMO HAGO PARA QUE SE ALINEE CON EL H2? */
-    display: flex; /* PREGUNTA: USAR FLEX O INLINE-BLOCK? */
+    padding-left: 10px; 
+    display: flex;
     overflow-x: auto; /* si no caben, permiten scroll horizontal */
 }
 

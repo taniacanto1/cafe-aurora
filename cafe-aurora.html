@@ -10,10 +10,22 @@
 </head>
 
 <body>
-    <!-- NAV BAR -->
+    <!-- BARRA DEL HEADER -->
     <div class="top-bar">
         <img src="./imagenes-cafe-aurora/logo-cafe-aurora.png" alt="Logo Café Aurora" class="logo-cafe">
-        <img src="./imagenes-cafe-aurora/hamburguesa-boton.png" alt="Icono menú hamburguesa" class="menu-toggle">
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="menu-label">
+            <img src="./imagenes-cafe-aurora/hamburguesa-boton.png" alt="Icono menú hamburguesa" class="menu-toggle">
+        </label>
+        <!-- TOGGLE MENU -->
+        <nav class="menu-items">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </div>
 
     <!-- IMAGEN PRINCIPAL -->
@@ -40,37 +52,36 @@
             </div>
         </section>
         <section class="products">
-        <h2>Nuestros productos</h2>
-    <div class="card-products">
-        <div class="card" type="button">
-            <img src="./imagenes-cafe-aurora/espresso-intenso.png" alt="Espresso Intenso">
-            <span class="card-title">Espresso Intenso</span>
-            <span class="card-description">Café 100% arábica de origen único</span>
-            <span class="price">$2.6</span>
-        </div>
-        <div class="card" type="button">
-            <img src="./imagenes-cafe-aurora/tarta-de-choco.png" alt="Tarta de Chocolate">
-            <span class="card-title">Tarta de Chocolate</span>
-            <span class="card-description">Bizcocho húmedo con ganache</span>
-            <span class="price">$6.3</span>
-        </div>
-        <div class="card" type="button">
-            <img src="./imagenes-cafe-aurora/capuccino-clasico.png" alt="Cappuccino Clásico">
-            <span class="card-title">Cappuccino Clásico</span>
-            <span class="card-description">Espresso con espuma de leche</span>
-            <span class="price">$4.2</span>
-        </div>
-        <div class="card" type="button">
-            <img src="./imagenes-cafe-aurora/croissant-artesanal.png" alt="Croissant Artesanal">
-            <span class="card-title">Croissant Artesanal</span>
-            <span class="card-description">Hojaldrado con mantequilla</span>
-            <span class="price">$3.00</span>
-        </div>
-    </div>
-</section>
+            <h2>Nuestros productos</h2>
+            <div class="card-products">
+                <div class="card" type="button">
+                    <img src="./imagenes-cafe-aurora/espresso-intenso.png" alt="Espresso Intenso">
+                    <span class="card-title">Espresso Intenso</span>
+                    <span class="card-description">Café 100% arábica de origen único</span>
+                    <span class="price">$2.6</span>
+                </div>
+                <div class="card" type="button">
+                    <img src="./imagenes-cafe-aurora/tarta-de-choco.png" alt="Tarta de Chocolate">
+                    <span class="card-title">Tarta de Chocolate</span>
+                    <span class="card-description">Bizcocho húmedo con ganache</span>
+                    <span class="price">$6.3</span>
+                </div>
+                <div class="card" type="button">
+                    <img src="./imagenes-cafe-aurora/capuccino-clasico.png" alt="Cappuccino Clásico">
+                    <span class="card-title">Cappuccino Clásico</span>
+                    <span class="card-description">Espresso con espuma de leche</span>
+                    <span class="price">$4.2</span>
+                </div>
+                <div class="card" type="button">
+                    <img src="./imagenes-cafe-aurora/croissant-artesanal.png" alt="Croissant Artesanal">
+                    <span class="card-title">Croissant Artesanal</span>
+                    <span class="card-description">Hojaldrado con mantequilla</span>
+                    <span class="price">$3.00</span>
+                </div>
+            </div>
+        </section>
 
     </main>
-
 </body>
 
 </html>
